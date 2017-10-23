@@ -1,5 +1,4 @@
 (function () {
-// Mock repository
     let users = [
         {
             _kmd: {

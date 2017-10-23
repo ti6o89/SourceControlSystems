@@ -32,6 +32,7 @@ function startApp() {
             $("#linkLogout").show();
         }
     }
+
     function showHomeView() {
         showView('viewHome');
     }
