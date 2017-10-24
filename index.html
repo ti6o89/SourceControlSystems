@@ -24,7 +24,6 @@
 </header>
 
 <main>
-
     <section id="loadingBox" class="loadingBox">Loading ...</section>
 
     <section id="infoBox" class="infoBox">Info</section>
@@ -77,9 +76,7 @@
                     <td>Price</td>
                     <td>Date published</td>
                     <td>
-
                         <a href="#">[Read more]</a>
-
                         <a href="#">[Delete]</a>
                         <a href="#">[Edit]</a>
                     </td>
@@ -93,21 +90,17 @@
         <form id="formCreateAd" class="form">
             <div>Title:</div>
             <div><input type="text" name="title" required /></div>
-
             <div>Description:</div>
             <div><textarea name="description" rows="10" required></textarea></div>
-
             <div>Date Published:</div>
             <div><input type="date" name="datePublished" required /></div>
             <div>Price:</div>
             <div><input type="number" step="0.01" name="price" required /></div>
-
             <div>Image:</div>
             <div><input type="text" name="image" required /></div>
             <div><input type="button" id="buttonCreateAd" value="Create" /></div>
         </form>
     </section>
-
 
     <section id="viewDetailsAd" class="viewDetailsAd">
     </section>
@@ -125,17 +118,11 @@
             <div><input type="date" name="datePublished" required /></div>
             <div>Price:</div>
             <div><input type="number" step="0.01" name="price" required /></div>
-
             <div>Image:</div>
             <div><input type="text" name="image" required /></div>
             <div><input type="button" id="buttonEditAd" value="Edit" /></div>
         </form>
     </section>
-
-            <div><input type="button" id="buttonEditAd" value="Edit" /></div>
-        </form>
-    </section>
-
     <script>
         startApp();
     </script>
