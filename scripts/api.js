@@ -131,6 +131,7 @@
         }
     });
 
+
     // Create advert
     $.mockjax(function (requestSettings) {
         if (requestSettings.url === "https://mock.api.com/appdata/kid_rk/adverts" &&
@@ -186,6 +187,7 @@
         }
     });
 
+
     // Load single advert
     $.mockjax(function (requestSettings) {
         if (requestSettings.url.match(/https:\/\/mock\.api\.com\/appdata\/kid_rk\/adverts\/(.+)/) &&
@@ -205,6 +207,7 @@
         }
     });
 
+
     // Edit advert
     $.mockjax(function (requestSettings) {
         if (requestSettings.url.match(/https:\/\/mock\.api\.com\/appdata\/kid_rk\/adverts\/(.+)/) &&
@@ -218,11 +221,16 @@
                         if (advert.length > 0) {
                             advert = advert[0];
                             advert.title = data.title;
+
                             advert.description = data.description;
                             advert.publisher = data.publisher;
                             advert.datePublished = data.datePublished;
                             advert.price = data.price;
-							advert.image = data.image;
+					              		advert.image = data.image;
+                            advert.publisher = data.publisher;
+                            advert.datePublished = data.datePublished;
+                            advert.price = data.price;
+
                             this.responseText = advert;
                         }
                         this.responseText = {};
